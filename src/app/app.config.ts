@@ -1,16 +1,22 @@
-import { provideHttpClient, withInterceptors } from '@angular/common/http';
-import { ApplicationConfig } from '@angular/core';
+import {
+  ApplicationConfig,
+  isDevMode,
+  provideExperimentalZonelessChangeDetection,
+} from '@angular/core';
+import { provideRouter, withViewTransitions } from '@angular/router';
+import { provideServiceWorker } from '@angular/service-worker';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
-import { tmdbReadAccessInterceptor } from './auth/tmdbReadAccessInterceptor.js';
-import { tmdbContentTypeInterceptor } from './data-access/api/tmdbContentTypeInterceptor.js';
-import { mergeBaseConfig } from './app.base.config.js';
+import { routes } from './app.routes';
 
-const browserConfig: ApplicationConfig = {
+export const appConfig: ApplicationConfig = {
   providers: [
-    provideHttpClient(
-      withInterceptors([tmdbContentTypeInterceptor, tmdbReadAccessInterceptor])
-    ),
+    provideExperimentalZonelessChangeDetection(),
+    provideRouter(routes, withViewTransitions()),
+    provideAnimations(),
+    provideServiceWorker('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
   ],
 };
-
-export const appConfig = () => mergeBaseConfig(browserConfig);
