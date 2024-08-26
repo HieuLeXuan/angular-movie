@@ -1,1 +1,20 @@
-<p>home works!</p>
+<section class="home-main-content">Welcome</section>
+<section class="container">
+  <!-- Movies on the theaters -->
+  <section class="movies__container">
+    <h2 class="movies__title" title="Go to Movies">
+      <a [routerLink]="['/movies']" class="colored-background-before">
+        <mat-icon>movie</mat-icon>
+        Movies
+      </a>
+    </h2>
+
+    @defer {
+    <mat-tab-group>
+      @for (tab of movieTabList; track tab) {
+      <mat-tab [label]="tab"></mat-tab>
+      } @empty { Empty list }
+    </mat-tab-group>
+    }
+  </section>
+</section>
