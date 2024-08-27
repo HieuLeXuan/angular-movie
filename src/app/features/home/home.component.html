@@ -1,5 +1,5 @@
 <section class="home-main-content">Welcome</section>
-<section class="container">
+<div class="container">
   <!-- Movies on the theaters -->
   <section class="movies__container">
     <h2 class="movies__title" title="Go to Movies">
@@ -10,11 +10,42 @@
     </h2>
 
     @defer {
-    <mat-tab-group>
+    <mat-tab-group mat-align-tabs="end">
       @for (tab of movieTabList; track tab) {
-      <mat-tab [label]="tab"></mat-tab>
+      <mat-tab [label]="tab">
+        <swiper-container
+          appSwiper
+          [config]="config"
+          pagination="true"
+          scrollbar="false"
+        >
+          @for (movie of moviesList | slice:0:15; track movie) {}
+          <swiper-slide>
+            <app-poster-card [movieInput]="" [isMovie]="true"></app-poster-card>
+          </swiper-slide>
+        </swiper-container>
+      </mat-tab>
+
       } @empty { Empty list }
     </mat-tab-group>
     }
   </section>
-</section>
+
+  <!--TV-->
+  <section class="shows__container">
+    <h2 class="shows__title" title="Go to TV Shows">
+      <a [routerLink]="'/tv-shows'" class="colored-background-before">
+        <mat-icon>tv_gen</mat-icon>
+        TV Shows
+      </a>
+    </h2>
+
+    @defer {
+    <mat-tab-group>
+      @for (tab of tvShowsTabList; track tab) {
+      <mat-tab [label]="tab"> </mat-tab>
+      } @empty { Empty list }
+    </mat-tab-group>
+    }
+  </section>
+</div>
