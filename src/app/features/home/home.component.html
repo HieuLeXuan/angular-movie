@@ -9,7 +9,7 @@
       </a>
     </h2>
 
-    @defer {
+    <!-- @defer { -->
     <mat-tab-group mat-align-tabs="end">
       @for (tab of movieTabList; track tab) {
       <mat-tab [label]="tab">
@@ -19,16 +19,16 @@
           pagination="true"
           scrollbar="false"
         >
-          @for (movie of moviesList | slice:0:15; track movie) {}
+          @for (movie of moviesList | slice:0:15; track movie) {
           <swiper-slide>
-            <app-poster-card [movieInput]="" [isMovie]="true"></app-poster-card>
+            <app-poster-card [model]="movie" [isMovie]="true"></app-poster-card>
           </swiper-slide>
+          }
         </swiper-container>
       </mat-tab>
-
       } @empty { Empty list }
     </mat-tab-group>
-    }
+    <!-- } -->
   </section>
 
   <!--TV-->
@@ -40,12 +40,12 @@
       </a>
     </h2>
 
-    @defer {
+    <!-- @defer { -->
     <mat-tab-group>
       @for (tab of tvShowsTabList; track tab) {
       <mat-tab [label]="tab"> </mat-tab>
       } @empty { Empty list }
     </mat-tab-group>
-    }
+    <!-- } -->
   </section>
 </div>

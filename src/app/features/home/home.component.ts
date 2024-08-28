@@ -1,6 +1,10 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router';
+import {
+  ChangeDetectorRef,
+  Component,
+  CUSTOM_ELEMENTS_SCHEMA,
+  OnInit,
+} from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import { MatIcon } from '@angular/material/icon';
 import { SlicePipe } from '@angular/common';
@@ -10,23 +14,23 @@ import { take } from 'rxjs';
 import { PosterCardComponent } from '../../shared/components/poster-card-view/poster-card.component';
 import { MovieModel } from '../content/models/movie.model';
 import { MoviesService } from '../content/services/movies.service';
+import { SwiperDirective } from '../../shared/directives/swiper.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    RouterModule,
-    MatIconModule,
-    MatTabGroup,
-    MatTab,
-    MatIcon,
-    SlicePipe,
     PosterCardComponent,
+    SwiperDirective,
+    MatTabGroup,
+    RouterLink,
+    SlicePipe,
+    MatIcon,
+    MatTab,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
 })
 export class HomeComponent implements OnInit {
   config: SwiperOptions = {
@@ -64,7 +68,10 @@ export class HomeComponent implements OnInit {
 
   tvShowsTabList = ['Airing Today', 'Currently Airing', 'Popular'];
 
-  constructor(private moviesService: MoviesService) {}
+  constructor(
+    private moviesService: MoviesService,
+    private cdr: ChangeDetectorRef // Inject ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
     this.getMovies('now_playing', 1);
@@ -76,6 +83,7 @@ export class HomeComponent implements OnInit {
       .pipe(take(1))
       .subscribe((res) => {
         this.moviesList = res.results;
+        this.cdr.detectChanges(); // Manually trigger change detection
       });
   }
 }

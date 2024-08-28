@@ -1,18 +1,10 @@
 import { Routes } from '@angular/router';
-import { ContentComponent } from './features/content/content.component';
 
 export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
       import('./features/home/home.component').then((m) => m.HomeComponent),
-  },
-  {
-    path: '404',
-    loadComponent: () =>
-      import('./core/components/not-found/not-found.component').then(
-        (m) => m.NotFoundComponent
-      ),
   },
   {
     path: 'movies',
@@ -23,6 +15,13 @@ export const routes: Routes = [
     path: 'tv-shows',
     loadChildren: () =>
       import('./features/content/content.routes').then((m) => m.CONTENT_ROUTES),
+  },
+  {
+    path: '404',
+    loadComponent: () =>
+      import('./core/components/not-found/not-found.component').then(
+        (m) => m.NotFoundComponent
+      ),
   },
   { path: '**', redirectTo: '404' },
 ];

@@ -1,9 +1,8 @@
-import { Component, input } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { DatePipe, NgOptimizedImage } from '@angular/common';
 
 import { ImgMissingDirective } from '../../directives/img-missing.directive';
-import { MovieModel } from '../../../features/content/models/movie.model';
 
 @Component({
   selector: 'app-poster-card',
@@ -12,7 +11,11 @@ import { MovieModel } from '../../../features/content/models/movie.model';
   templateUrl: './poster-card.component.html',
   styleUrl: './poster-card.component.scss',
 })
-export class PosterCardComponent {
-  movieInput = input<MovieModel>();
+export class PosterCardComponent implements OnInit {
+  model = input<any>();
   isMovie = input<boolean>();
+
+  ngOnInit(): void {
+    // console.log(this.model);
+  }
 }
