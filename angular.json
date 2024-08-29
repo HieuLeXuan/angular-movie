@@ -111,6 +111,51 @@
               "src/**/*.html"
             ]
           }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "angular-movie:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-movie:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        },
+        "ct": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "angular-movie:serve",
+            "watch": true,
+            "headless": false,
+            "testingType": "component"
+          },
+          "configurations": {
+            "development": {
+              "devServerTarget": "angular-movie:serve:development"
+            }
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "angular-movie:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-movie:serve:production"
+            }
+          }
         }
       }
     }
@@ -118,7 +163,9 @@
   "cli": {
     "analytics": "903986b0-1d5d-440c-9694-17a4e5330134",
     "schematicCollections": [
-      "@angular-eslint/schematics"
+      "@cypress/schematic",
+      "@angular-eslint/schematics",
+      "@schematics/angular"
     ]
   }
 }
