@@ -9,9 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "github": "ng build --output-path docs --base-href /angular-movie/",
-    "explore": "ng build --named-chunks --source-map && source-map-explorer dist/angular-movie/**/*.js",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "explore": "ng build --named-chunks --source-map && source-map-explorer dist/angular-movie/**/*.js"
   },
   "private": true,
   "dependencies": {
