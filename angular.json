@@ -90,6 +90,9 @@
             "styles": ["src/styles.scss", "src/theme.scss"],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

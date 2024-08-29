@@ -21,7 +21,7 @@ import { SwiperDirective } from '../../shared/directives/swiper.directive';
   standalone: true,
   imports: [
     PosterCardComponent,
-    SwiperDirective,
+    // SwiperDirective,
     MatTabGroup,
     RouterLink,
     SlicePipe,

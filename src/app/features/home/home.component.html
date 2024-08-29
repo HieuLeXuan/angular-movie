@@ -13,7 +13,7 @@
     <mat-tab-group mat-align-tabs="end">
       @for (tab of movieTabList; track tab) {
       <mat-tab [label]="tab">
-        <swiper-container
+        <!-- <swiper-container
           appSwiper
           [config]="config"
           pagination="true"
@@ -24,7 +24,7 @@
             <app-poster-card [model]="movie" [isMovie]="true"></app-poster-card>
           </swiper-slide>
           }
-        </swiper-container>
+        </swiper-container> -->
       </mat-tab>
       } @empty { Empty list }
     </mat-tab-group>
