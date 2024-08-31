@@ -1,3 +1,4 @@
+{{ log() }}
 <section class="home-main-content">Welcome</section>
 <div class="container">
   <!-- Movies on the theaters -->
@@ -9,26 +10,29 @@
       </a>
     </h2>
 
-    <!-- @defer { -->
-    <mat-tab-group mat-align-tabs="end">
+    @defer {
+    <mat-tab-group
+      (selectedTabChange)="tabMovieChange($event)"
+      mat-align-tabs="end"
+    >
       @for (tab of movieTabList; track tab) {
       <mat-tab [label]="tab">
-        <!-- <swiper-container
+        <swiper-container
           appSwiper
           [config]="config"
           pagination="true"
           scrollbar="false"
         >
-          @for (movie of moviesList | slice:0:15; track movie) {
-          <swiper-slide>
+          @for (movie of moviesList() | slice:0:15; track movie) {
+          <swiper-slide lazy="true">
             <app-poster-card [model]="movie" [isMovie]="true"></app-poster-card>
           </swiper-slide>
           }
-        </swiper-container> -->
+        </swiper-container>
       </mat-tab>
       } @empty { Empty list }
     </mat-tab-group>
-    <!-- } -->
+    }
   </section>
 
   <!--TV-->
@@ -40,12 +44,31 @@
       </a>
     </h2>
 
-    <!-- @defer { -->
-    <mat-tab-group>
+    @defer {
+    <mat-tab-group
+      (selectedTabChange)="tabTvShowChange($event)"
+      mat-align-tabs="end"
+    >
       @for (tab of tvShowsTabList; track tab) {
-      <mat-tab [label]="tab"> </mat-tab>
+      <mat-tab [label]="tab">
+        <swiper-container
+          appSwiper
+          [config]="config"
+          pagination="true"
+          scrollbar="false"
+        >
+          @for (tvShow of tvShowsList() | slice:0:15; track tvShow) {
+          <swiper-slide lazy="true">
+            <app-poster-card
+              [model]="tvShow"
+              [isMovie]="true"
+            ></app-poster-card>
+          </swiper-slide>
+          }
+        </swiper-container>
+      </mat-tab>
       } @empty { Empty list }
     </mat-tab-group>
-    <!-- } -->
+    }
   </section>
 </div>

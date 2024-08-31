@@ -43,7 +43,7 @@
       </button>
 
       <mat-menu #menu="matMenu">
-        @for (theme of themeColorList; track $index) {
+        @for (theme of themeColorList; track theme) {
         <div
           [class.hidden]="themeColorInit === theme.color"
           [attr.aria-label]="'Color ' + theme.name"

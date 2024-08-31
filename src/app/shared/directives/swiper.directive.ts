@@ -1,17 +1,19 @@
-import { AfterViewInit, Directive, ElementRef, input } from '@angular/core';
-import { SwiperContainer } from 'swiper/element';
-import { Swiper, SwiperOptions } from 'swiper/types';
+import { AfterViewInit, Directive, ElementRef, input } from "@angular/core";
+import { SwiperContainer } from "swiper/element";
+import { SwiperOptions } from "swiper/types";
 
 @Directive({
-  selector: '[appSwiper]',
+  selector: "[appSwiper]",
   standalone: true,
 })
 export class SwiperDirective implements AfterViewInit {
   config = input<SwiperOptions>();
 
-  constructor(private el: ElementRef<HTMLElement>) {}
+  constructor(private el: ElementRef<SwiperContainer>) {}
 
   ngAfterViewInit(): void {
-    new Swiper(this.el.nativeElement, this.config());
+    Object.assign(this.el?.nativeElement, this.config());
+
+    this.el.nativeElement.initialize();
   }
 }

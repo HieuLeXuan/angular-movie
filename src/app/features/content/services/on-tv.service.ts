@@ -1,14 +1,12 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
-
 import { environment } from "../../../../environments/environment";
-import { MovieModel } from "../models/movie.model";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root",
 })
-export class MoviesService {
+export class OnTVService {
   baseUrl: string;
   apiKey: string;
   language: string;
@@ -21,9 +19,9 @@ export class MoviesService {
     this.region = "VN";
   }
 
-  getMovies(type: string, page: number): Observable<any> {
-    return this.http.get<MovieModel[]>(
-      `${this.baseUrl}movie/${type}?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`
+  getTvShow(type: string, page: number): Observable<any> {
+    return this.http.get(
+      `${this.baseUrl}tv/${type}?api_key=${this.apiKey}&page=${page}&language=${this.language}`
     );
   }
 }

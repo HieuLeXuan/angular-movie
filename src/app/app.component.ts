@@ -1,18 +1,25 @@
-import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser, NgClass } from '@angular/common';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  OnInit,
+  PLATFORM_ID,
+} from "@angular/core";
+import { isPlatformBrowser, NgClass } from "@angular/common";
+import { NavigationEnd, Router, RouterOutlet } from "@angular/router";
 
-import { themeColors } from './core/constants/theme-colors';
-import { Color } from './core/enums/colors.enum';
-import { NavbarComponent } from './core/components/navbar/navbar.component';
-import { FooterComponent } from './core/components/footer/footer.component';
+import { themeColors } from "./core/constants/theme-colors";
+import { Color } from "./core/enums/colors.enum";
+import { NavbarComponent } from "./core/components/navbar/navbar.component";
+import { FooterComponent } from "./core/components/footer/footer.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
   imports: [RouterOutlet, NgClass, NavbarComponent, FooterComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  standalone: true,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit {
   private isBrowser: boolean;
@@ -51,5 +58,9 @@ export class AppComponent implements OnInit {
 
   checkSelectedTheme(color: string) {
     return this.themeColorInit === color;
+  }
+
+  log() {
+    console.log("CD app component");
   }
 }

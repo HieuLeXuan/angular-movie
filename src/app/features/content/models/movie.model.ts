@@ -1,7 +1,7 @@
 export class MovieModel {
   public adult!: boolean;
   public backdrop_path!: string;
-  public genres!: Array<any>;
+  public genres!: any[];
   public homepage!: string;
   public id!: number;
   public imdb_id!: string;
@@ -10,12 +10,12 @@ export class MovieModel {
   public overview!: string;
   public popularity!: number;
   public poster_path!: string;
-  public production_companies!: Array<any>;
-  public production_countries!: Array<any>;
+  public production_companies!: any[];
+  public production_countries!: any[];
   public release_date!: string;
   public revenue!: number;
   public runtime!: number;
-  public spoken_languages!: Array<any>;
+  public spoken_languages!: any[];
   public status!: string;
   public tagline!: string;
   public title!: string;
