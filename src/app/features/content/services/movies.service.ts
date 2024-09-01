@@ -18,12 +18,18 @@ export class MoviesService {
     this.baseUrl = "https://api.themoviedb.org/3/";
     this.apiKey = environment.theMovieDBApi;
     this.language = "en-US";
-    this.region = "VN";
+    this.region = "US";
   }
 
   getMovies(type: string, page: number): Observable<any> {
-    return this.http.get<MovieModel[]>(
+    return this.http.get(
       `${this.baseUrl}movie/${type}?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`
+    );
+  }
+
+  getNowPlaying(page: number): Observable<any> {
+    return this.http.get(
+      `${this.baseUrl}movie/now_playing?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`
     );
   }
 }

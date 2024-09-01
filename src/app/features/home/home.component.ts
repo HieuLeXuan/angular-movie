@@ -17,6 +17,7 @@ import { MovieModel } from "../content/models/movie.model";
 import { MoviesService } from "../content/services/movies.service";
 import { SwiperDirective } from "../../shared/directives/swiper.directive";
 import { OnTVService } from "../content/services/on-tv.service";
+import { TvModel } from "../content/models/tv.model";
 
 @Component({
   selector: "app-home",
@@ -71,7 +72,7 @@ export class HomeComponent implements OnInit {
   selectedMovieTab = 0;
 
   tvShowsTabList = ["Airing Today", "Currently Airing", "Popular"];
-  tvShowsList = signal<MovieModel[]>([]);
+  tvShowsList = signal<TvModel[]>([]);
   selectedTvShowTab = 0;
 
   constructor(

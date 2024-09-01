@@ -16,12 +16,18 @@ export class OnTVService {
     this.baseUrl = "https://api.themoviedb.org/3/";
     this.apiKey = environment.theMovieDBApi;
     this.language = "en-US";
-    this.region = "VN";
+    this.region = "US";
   }
 
   getTvShow(type: string, page: number): Observable<any> {
     return this.http.get(
       `${this.baseUrl}tv/${type}?api_key=${this.apiKey}&page=${page}&language=${this.language}`
+    );
+  }
+
+  getTvOnTheAir(page: number): Observable<any> {
+    return this.http.get(
+      `${this.baseUrl}tv/on_the_air?api_key=${this.apiKey}&page=${page}&language=${this.language}`
     );
   }
 }
