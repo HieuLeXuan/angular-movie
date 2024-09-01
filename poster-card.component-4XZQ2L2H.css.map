@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/components/poster-card-view/poster-card.component.scss"],
+  "sourcesContent": [".poster {\n  width: 100%;\n  padding: 0;\n  overflow: hidden;\n  min-height: 325px;\n  max-height: 350px;\n\n  &__image {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    border-radius: 4px 4px 0 0;\n    user-select: none;\n    transition: 0.4s;\n    min-height: 155px;\n\n    &:hover {\n      transform: scale(1.1);\n    }\n  }\n\n  &__content {\n    padding: 10px 0;\n\n    p {\n      font-size: 14px;\n      color: #fff;\n    }\n  }\n\n  &__title {\n    display: inherit;\n    font-weight: 700;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }\n}\n"],
+  "mappings": "AAAA,CAAA,OACE,MAAA,KADF,QAEE,EACA,SAAA,OACA,WAAA,MACA,WAAA,MAEA,CAAA,cACE,MAAA,KACA,OAAA,KACA,WAAA,MAVJ,cAWI,IAAA,IAAA,EAAA,EACA,oBAAA,KAAA,YAAA,KACA,WAAA,IACA,WAAA,MAEA,CATF,aASE,OACE,UAAA,MAAA,KAIJ,CAAA,gBArBF,QAsBI,KAAA,EAEA,CAHF,gBAGE,EACE,UAAA,KACA,MAAA,KAIJ,CAAA,cACE,QAAA,QACA,YAAA,IACA,SAAA,OACA,cAAA,SACA,YAAA",
+  "names": []
+}
