@@ -98,12 +98,12 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "buildTarget": "angular-movies:build:production"
+            "buildTarget": "angular-movie:build:production"
           }
         }
       }
     },
-    "angular-movies-e2e": {
+    "angular-movie-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -112,7 +112,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "angular-movies:serve"
+            "devServerTarget": "angular-movie:serve"
           }
         }
       }

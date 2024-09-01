@@ -9,8 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "github": "ng build --output-path docs --base-href /Angular-Movies/",
-    "explore": "ng build --named-chunks --source-map && source-map-explorer dist/angular-movies/**/*.js"
+    "github": "ng build --output-path docs --base-href /angular-movie/",
+    "explore": "ng build --named-chunks --source-map && source-map-explorer dist/angular-movie/**/*.js"
   },
   "private": true,
   "dependencies": {
