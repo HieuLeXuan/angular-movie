@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/components/not-found/not-found.component.ts", "src/app/core/components/not-found/not-found.component.html"],
+  "sourcesContent": ["import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-not-found',\n  standalone: true,\n  imports: [],\n  templateUrl: './not-found.component.html',\n  styleUrl: './not-found.component.scss'\n})\nexport class NotFoundComponent {\n\n}\n", "<div class=\"padding-top-60 not-found-container\">\n  <h1 class=\"not-found-title\">404 - Page Not Found</h1>\n</div>\n"],
+  "mappings": "gFASA,IAAaA,GAAiB,IAAA,CAAxB,IAAOA,EAAP,MAAOA,CAAiB,KAAjBA,wCAAAA,EAAiB,KAAjBA,sBAAAA,EAAiBC,UAAA,CAAA,CAAA,eAAA,CAAA,EAAAC,WAAA,GAAAC,SAAA,CAAAC,CAAA,EAAAC,MAAA,EAAAC,KAAA,EAAAC,OAAA,CAAA,CAAA,EAAA,iBAAA,qBAAA,EAAA,CAAA,EAAA,iBAAA,CAAA,EAAAC,SAAA,SAAAC,EAAAC,EAAA,CAAAD,EAAA,ICT9BE,EAAA,EAAA,MAAA,CAAA,EAAgD,EAAA,KAAA,CAAA,EAClBC,EAAA,EAAA,sBAAA,EAAoBC,EAAA,EAAK;kEDQjD,IAAOb,EAAPc,SAAOd,CAAiB,GAAA",
+  "names": ["NotFoundComponent", "selectors", "standalone", "features", "\u0275\u0275StandaloneFeature", "decls", "vars", "consts", "template", "rf", "ctx", "\u0275\u0275elementStart", "\u0275\u0275text", "\u0275\u0275elementEnd", "_NotFoundComponent"]
+}

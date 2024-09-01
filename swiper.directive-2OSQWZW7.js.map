@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/directives/swiper.directive.ts"],
+  "sourcesContent": ["import { AfterViewInit, Directive, ElementRef, input } from \"@angular/core\";\nimport { SwiperContainer } from \"swiper/element\";\nimport { SwiperOptions } from \"swiper/types\";\n\n@Directive({\n  selector: \"[appSwiper]\",\n  standalone: true,\n})\nexport class SwiperDirective implements AfterViewInit {\n  config = input<SwiperOptions>();\n\n  constructor(private el: ElementRef<SwiperContainer>) {}\n\n  ngAfterViewInit(): void {\n    Object.assign(this.el?.nativeElement, this.config());\n\n    this.el.nativeElement.initialize();\n  }\n}\n"],
+  "mappings": "wEAQA,IAAaA,GAAe,IAAA,CAAtB,IAAOA,EAAP,MAAOA,CAAe,CAG1BC,YAAoBC,EAA+B,CAA/BA,EAAAA,WAFpBC,EAAAA,cAASC,EAAK,GAEM,KAAAF,GAAAA,CAAkC,CAEtDG,iBAAe,CACbC,OAAOC,OAAO,KAAKL,IAAIM,cAAe,KAAKL,OAAM,CAAE,EAEnD,KAAKD,GAAGM,cAAcC,WAAU,CAClC,KATWT,wCAAAA,GAAeU,EAAAC,CAAA,CAAA,CAAA,KAAfX,sBAAAA,EAAeY,UAAA,CAAA,CAAA,GAAA,YAAA,EAAA,CAAA,EAAAC,OAAA,CAAAV,OAAA,CAAA,EAAA,QAAA,CAAA,EAAAW,WAAA,EAAA,CAAA,GAAtB,IAAOd,EAAPe,SAAOf,CAAe,GAAA",
+  "names": ["SwiperDirective", "constructor", "el", "config", "input", "ngAfterViewInit", "Object", "assign", "nativeElement", "initialize", "\u0275\u0275directiveInject", "ElementRef", "selectors", "inputs", "standalone", "_SwiperDirective"]
+}

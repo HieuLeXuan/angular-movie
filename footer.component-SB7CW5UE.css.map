@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/components/footer/footer.component.scss"],
+  "sourcesContent": [".footer {\n  background-color: #212121;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: auto;\n  padding: 25px 0;\n  font-size: 0.9rem;\n  color: #fff;\n\n  &__hlx {\n    font-weight: bold;\n    transition: color 0.4s cubic-bezier(0.6, -0.05, 0.01, 0.99);\n  }\n}\n"],
+  "mappings": "AAAA,CAAA,OACE,iBAAA,QACA,QAAA,KACA,gBAAA,OACA,YAAA,OACA,WAAA,KALF,QAME,KAAA,EACA,UAAA,MACA,MAAA,KAEA,CAAA,YACE,YAAA,IACA,WAAA,MAAA,IAAA,aAAA,EAAA,CAAA,IAAA,CAAA,GAAA,CAAA",
+  "names": []
+}
