@@ -32,4 +32,16 @@ export class MoviesService {
       `${this.baseUrl}movie/now_playing?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`
     );
   }
+
+  getMovie(id: string): Observable<any> {
+    return this.http.get(
+      `${this.baseUrl}movie/${id}?api_key=${this.apiKey}&language=${this.language}&region=${this.region}`
+    );
+  }
+
+  getMovieVideos(id: string): Observable<any> {
+    return this.http.get(
+      `${this.baseUrl}movie/${id}/videos?api_key=${this.apiKey}`
+    );
+  }
 }

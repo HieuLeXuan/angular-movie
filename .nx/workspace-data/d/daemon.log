@@ -31,3 +31,36 @@
 [NX Daemon Server] - 2024-08-31T11:20:01.094Z - [WATCHER]: Stopping the watcher for /Users/hieule/Desktop/cv hieulexuan/angular-movie (sources)
 [NX Daemon Server] - 2024-08-31T11:20:01.094Z - Closed a connection. Number of open connections: 0
 [NX Daemon Server] - 2024-08-31T11:20:01.094Z - [WATCHER]: Stopping the watcher for /Users/hieule/Desktop/cv hieulexuan/angular-movie (outputs)
+[NX Daemon Server] - 2024-09-01T14:31:31.171Z - Started listening on: /var/folders/4l/s_75lw290f1b372pczlnz1yc0000gn/T/8269fa1da0a43b367c2a/d.sock
+[NX Daemon Server] - 2024-09-01T14:31:31.175Z - [WATCHER]: Subscribed to changes within: /Users/hieule/Desktop/cv hieulexuan/angular-movie (native)
+[NX Daemon Server] - 2024-09-01T14:31:31.183Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-01T14:31:31.184Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-01T14:31:31.186Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-01T14:31:31.188Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-01T14:31:31.188Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-01T14:31:31.188Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-01T14:31:31.190Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-01T14:31:31.191Z - [WATCHER]: Stopping the watcher for /Users/hieule/Desktop/cv hieulexuan/angular-movie (sources)
+[NX Daemon Server] - 2024-09-01T14:31:31.191Z - [WATCHER]: Stopping the watcher for /Users/hieule/Desktop/cv hieulexuan/angular-movie (outputs)
+[NX Daemon Server] - 2024-09-01T14:31:31.742Z - Started listening on: /var/folders/4l/s_75lw290f1b372pczlnz1yc0000gn/T/8269fa1da0a43b367c2a/d.sock
+[NX Daemon Server] - 2024-09-01T14:31:31.745Z - [WATCHER]: Subscribed to changes within: /Users/hieule/Desktop/cv hieulexuan/angular-movie (native)
+[NX Daemon Server] - 2024-09-01T14:31:31.753Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-01T14:31:31.753Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-01T14:31:31.756Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-01T14:31:31.757Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-01T14:31:31.758Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-01T14:31:31.758Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-01T14:31:31.759Z - [WATCHER]: Stopping the watcher for /Users/hieule/Desktop/cv hieulexuan/angular-movie (sources)
+[NX Daemon Server] - 2024-09-01T14:31:31.760Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-01T14:31:31.760Z - [WATCHER]: Stopping the watcher for /Users/hieule/Desktop/cv hieulexuan/angular-movie (outputs)
+[NX Daemon Server] - 2024-09-02T06:51:23.967Z - Started listening on: /var/folders/4l/s_75lw290f1b372pczlnz1yc0000gn/T/8269fa1da0a43b367c2a/d.sock
+[NX Daemon Server] - 2024-09-02T06:51:23.970Z - [WATCHER]: Subscribed to changes within: /Users/hieule/Desktop/cv hieulexuan/angular-movie (native)
+[NX Daemon Server] - 2024-09-02T06:51:24.005Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T06:51:24.026Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T06:51:24.029Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T06:51:24.066Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T06:51:24.090Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T06:51:24.090Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 24.
+[NX Daemon Server] - 2024-09-02T06:51:24.108Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T06:51:24.316Z - [WATCHER]: Stopping the watcher for /Users/hieule/Desktop/cv hieulexuan/angular-movie (sources)
+[NX Daemon Server] - 2024-09-02T06:51:24.317Z - [WATCHER]: Stopping the watcher for /Users/hieule/Desktop/cv hieulexuan/angular-movie (outputs)
