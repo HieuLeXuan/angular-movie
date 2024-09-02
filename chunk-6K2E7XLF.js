@@ -1,0 +1,2 @@
+import{Ia as c,Ja as s,d as e,gb as o,pa as r}from"./chunk-DIQN3TXG.js";var m=(()=>{let t=class t{constructor(n){e(this,"el");e(this,"config",c());this.el=n}ngAfterViewInit(){Object.assign(this.el?.nativeElement,this.config()),this.el.nativeElement.initialize()}};e(t,"\u0275fac",function(a){return new(a||t)(o(s))}),e(t,"\u0275dir",r({type:t,selectors:[["","appSwiper",""]],inputs:{config:[1,"config"]},standalone:!0}));let i=t;return i})();export{m as SwiperDirective};
+//# sourceMappingURL=chunk-6K2E7XLF.js.map

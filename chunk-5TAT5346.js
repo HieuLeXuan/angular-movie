@@ -1,0 +1,3 @@
+import{Ob as a,Pb as c,d as o,ic as r,na as i,nc as d}from"./chunk-DIQN3TXG.js";var l=(()=>{let t=class t{};o(t,"\u0275fac",function(e){return new(e||t)}),o(t,"\u0275cmp",i({type:t,selectors:[["app-not-found"]],standalone:!0,features:[d],decls:3,vars:0,consts:[[1,"padding-top-60","not-found-container"],[1,"not-found-title"]],template:function(e,s){e&1&&(a(0,"div",0)(1,"h1",1),r(2,"404 - Page Not Found"),c()())},styles:[`.not-found-container[_ngcontent-%COMP%]{height:91vh;display:flex;align-items:center;justify-content:center}.not-found-title[_ngcontent-%COMP%]{color:#fff}
+/*# sourceMappingURL=not-found.component-FGQMVYTW.css.map */`]}));let n=t;return n})();export{l as NotFoundComponent};
+//# sourceMappingURL=chunk-5TAT5346.js.map

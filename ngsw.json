@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1725194808747,
+  "timestamp": 1725264521487,
   "index": "/angular-movie/index.html",
   "assetGroups": [
     {
@@ -68,8 +68,8 @@
     "/angular-movie/assets/img/logo.png": "aec96eb71eb6a38e13ab35efc809c317fcb48c42",
     "/angular-movie/assets/img/logo.webp": "eb545965e2ddacdae374bf765beaca908d57f2e3",
     "/angular-movie/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/angular-movie/index.html": "4c49e7d07a139ee1e5aeb6a00bf584139b8c3564",
-    "/angular-movie/manifest.webmanifest": "046a315f0f843b5f63b94cb4376453e8e1b6c43e"
+    "/angular-movie/index.html": "23f057dc50303d1d6d2e8f207bd4dde6fa6b392e",
+    "/angular-movie/manifest.webmanifest": "6e414b31afa5a39cba804038f5110ab977c35ca6"
   },
   "navigationUrls": [
     {
